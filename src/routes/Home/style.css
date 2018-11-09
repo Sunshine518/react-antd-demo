@@ -1,0 +1,135 @@
+.Box {
+    display: flex;
+    align-items: center;
+}
+
+.left-box {
+    float: left;
+    padding-right: 10px;
+}
+
+.right-box {
+    float: right;
+}
+
+.icon-size {
+    font-size: 2rem;
+}
+
+.heart-color {
+    color: #f47ebe;
+}
+
+.cloud-color {
+    color: rgba(47, 47, 47, 0.5);
+}
+
+.mail-color {
+    color: #8af4da;
+}
+
+.camera-color {
+    color: #55b0f4;
+}
+
+.no-padding .ant-card-body {
+    padding: 12px 0
+}
+
+.avatar {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: 5px;
+    display: block;
+    color: #888888;
+    font-size: 12px;
+}
+
+.massage-box {
+    padding: 19px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.massage-box:last-child {
+    border-bottom: none;
+}
+
+/*走马灯*/
+.img-size {
+    height: 410px;
+    width:555px;
+    background-size: cover;
+}
+
+.img-size .slick-slide {
+    height: 410px!important;
+    width: 555px!important;
+}
+
+/*箭头*/
+
+.ant-carousel .slick-slider .slick-prev{
+    z-index:99;
+    left:0;
+    height: 40px!important;
+}
+.ant-carousel .slick-slider .slick-next{
+    z-index:99;
+    right:0;
+    height: 40px!important;
+}
+.ant-carousel .slick-slider .slick-prev::before{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    transform: rotate(130deg);
+    top: 18px;
+    left: 10px;
+}
+.ant-carousel .slick-slider .slick-prev::after{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    transform: rotate(40deg);
+    bottom: 17px;
+    left: 10px;
+}
+.ant-carousel .slick-slider .slick-next::before{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    transform: rotate(40deg);
+    top: 18px;
+    left: 10px;
+}
+.ant-carousel .slick-slider .slick-next::after{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    transform: rotate(130deg);
+    bottom: 17px;
+    left: 10px;
+}
